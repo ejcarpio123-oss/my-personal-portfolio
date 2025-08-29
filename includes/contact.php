@@ -23,19 +23,19 @@
   <!-- Phone -->
   <div class="p-4 bg-white shadow border border-gray-300 rounded flex items-center gap-3 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
     <i data-lucide="facebook" class="text-blue-500 w-6 h-6"></i>
-    <a href="https://www.facebook.com/carpiojose.09" class="text-sm font-medium text-gray-700">Enrique Carpio</a>
+    <a href="https://www.facebook.com/carpiojose.09" class="text-sm font-medium text-gray-700">Facebook</a>
   </div>  
 
   <!-- LinkedIn -->
   <div class="p-4 bg-white shadow border border-gray-300 rounded flex items-center gap-3 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
     <i data-lucide="instagram" class="text-blue-700 w-6 h-6"></i>
-    <a href="https://www.instagram.com/vrus1207/" class="text-sm font-medium text-gray-700">Enzo Carpio</a>
+    <a href="https://www.instagram.com/vrus1207/" class="text-sm font-medium text-gray-700">Instagran</a>
   </div>
 
   <!-- GitHub -->
   <div class="p-4 bg-white shadow border border-gray-300 rounded flex items-center gap-3 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
     <i data-lucide="github" class="w-6 h-6"></i>
-    <span class="text-sm font-medium text-gray-700">github.com/yourprofile</span>
+    <a href="https://github.com/ejcarpio123-oss" class="text-sm font-medium text-gray-700">GitHub</a>
   </div>
 </div>
 
