@@ -4,17 +4,17 @@
     <div class="flex flex-col justify-center gap-5 text-center sm:text-left order-2 sm:order-1">
       <h1 class="text-4xl sm:text-5xl font-bold">Hi, I'm Jose Enrique B. Carpio</h1>
       <span class="text-base font-semibold">An aspiring Full Stack Web Developer & Video Editor.</span>
-      <p class="leading-relaxed text-sm sm:text-base text-gray-700">
+      <p class="leading-relaxed text-sm sm:text-base  ">
          Passionate about creating responsive, user-friendly websites with modern technologies, 
         and bringing stories to life through clean and engaging video edits. 
         I enjoy turning ideas into functional web applications and creative visual content.
       </p>
       </p>
       <div class="flex justify-center sm:justify-start gap-4">
-        <a href="#projects" class="px-4 py-1 text-sm sm:text-base rounded-full bg-gradient-to-r from-gray-600 to-gray-800 text-white hover:from-gray-700 hover:to-gray-900 transition shadow hover:shadow-lg">
+        <a href="#skills" class="border-2 border-gray-700 px-3 py-1 rounded shadow-md bg-black text-white hover:bg-white hover:text-black hover:shadow-lg transition-all duration-300 cursor-pointer">
           View My Work
         </a>
-        <a href="#contact" class="px-4 py-1 text-sm sm:text-base rounded-full bg-gradient-to-r from-gray-800 to-gray-600 text-white hover:from-gray-900 hover:to-gray-700 transition shadow hover:shadow-lg">
+        <a href="#contact" class="border-2 border-gray-700 px-3 py-1 rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg transition-all duration-300 cursor-pointer">
           Let's Connect
         </a>
       </div>

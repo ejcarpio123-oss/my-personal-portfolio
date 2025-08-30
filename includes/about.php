@@ -7,26 +7,26 @@
 
     <div class="flex flex-col items-start gap-5">
       <h2 class="text-2xl font-bold">About Me</h2>
-      <p class="text-sm sm:text-base leading-relaxed text-gray-700">
+      <p class="text-sm sm:text-base leading-relaxed">
         Hi! I'm <span class="font-semibold">Jose Enrique B. Carpio</span>, a recent 
         <span class="font-semibold">Bachelor of Science in Information Technology</span> graduate with practical experience in 
         <span class="font-semibold">Web Development</span>. Through hands-on projects, I’ve created responsive, user-friendly websites that focus on both design and functionality.
       </p>
 
-      <p class="text-sm sm:text-base leading-relaxed text-gray-700">
+      <p class="text-sm sm:text-base leading-relaxed">
         I’m currently sharpening my expertise in <span class="font-semibold">Laravel</span>, <span class="font-semibold">PHP</span>, and 
         modern frontend frameworks like <span class="font-semibold">Bootstrap</span> and <span class="font-semibold">Tailwind CSS</span>. 
         My passion is transforming ideas into real, working solutions — from simple websites to full-featured web applications.
       </p>
 
-      <p class="text-sm sm:text-base leading-relaxed text-gray-700">
+      <p class="text-sm sm:text-base leading-relaxed">
         I believe in <span class="font-semibold">continuous learning</span> and staying updated with emerging technologies. 
         While new to the professional world, I’m committed to delivering reliable, high-quality work and building meaningful, long-term collaborations with clients.
       </p>
 
-      <a href="#contact" class="px-4 py-1 text-sm sm:text-base rounded-full bg-gradient-to-r from-gray-800 to-gray-600 text-white hover:from-gray-900 hover:to-gray-700 transition shadow-md hover:shadow-lg">
+      <a href="#contact" class="border-2 border-gray-700 px-3 py-1 rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg transition-all duration-300 cursor-pointer">
           Let's Connect
-        </a>
+      </a>
     </div>    
   </div>
 
