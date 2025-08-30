@@ -90,6 +90,10 @@
           <i data-lucide="mail"></i> Contact
         </a>     
 
+        <a href="assets/Resume.pdf" target="_blank" class="flex gap-2 !no-underline block bg-gray-100/30 text-white py-2 px-3 mt-2 rounded hover:bg-gray-100/70 hover:!text-white transition">
+          <i data-lucide="download"></i> Download CV
+        </a>  
+
     </aside>
   </div>
 <!-- offcanvas -->
@@ -134,7 +138,7 @@
 
   <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-5">
     <div class="flex justify-center">
-      <img src="assets/img/me.jpg" alt="Jose Enrique Carpio" class="h-50 w-50 sm:h-80 sm:w-80 md:h-96 md:w-96 object-cover rounded-full shadow hover:shadow-lg border-10 border-white">
+      <img src="assets/img/me2.jpg" alt="Jose Enrique Carpio" class="h-50 w-50 sm:h-80 sm:w-80 md:h-96 md:w-96 object-cover rounded-full shadow hover:shadow-lg border-10 border-white">
     </div>
 
     <div class="flex flex-col items-start gap-5">
@@ -156,7 +160,7 @@
         While new to the professional world, I’m committed to delivering reliable, high-quality work and building meaningful, long-term collaborations with clients.
       </p>
 
-      <a href="#contact" class="border-2 border-gray-700 text-xs px-3 py-1 rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg transition-all duration-300 cursor-pointer">
+      <a href="#contact" class="border-2 border-gray-700 text-sm px-3 py-1 rounded shadow-md hover:bg-black hover:text-white hover:shadow-lg transition-all duration-300 cursor-pointer">
           Let's Connect
       </a>
     </div>    
@@ -242,7 +246,7 @@
 
 
 <!--Skills Section-->
-<section id="skills" x-data="{ tab: 'stack' }" class="p-6 h-fit sm:h-180 flex flex-col justify-start items-center max-w-7xl mx-auto">
+<section id="skills" x-data="{ tab: 'project' }" class="p-6 h-fit sm:h-180 flex flex-col justify-start items-center max-w-7xl mx-auto">
 
   <h2 class="text-base sm:text-2xl font-bold mb-5">Stack | Skills | Certificates | Projects</h2>
   <p class="leading-relaxed text-xs sm:text-base text-gray-700 text-center mb-5">
@@ -520,10 +524,10 @@
         <div class="relative">
             <img :src="`assets/${projects.find(p => p.images.includes(gallery[index])).folder}/${gallery[index]}`" class="max-h-[80vh] max-w-[80vw] rounded shadow-lg" alt="">
 
-       
-            <button @click="prev()" class="absolute left-2 top-1/2 -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 px-3 py-1 rounded hover:bg-opacity-80">Prev</button>
+          
+            <button @click="prev()" class="left-0 mt-10 sm:mt-0 absolute sm:left-2 sm:top-1/2 -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 px-3 py-1 rounded hover:bg-opacity-80">Prev</button>
 
-            <button @click="next()" class="absolute right-2 top-1/2 -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 px-3 py-1 rounded hover:bg-opacity-80">Next</button>
+            <button @click="next()" class="right-0 mt-10 sm:mt-0 absolute sm:right-2 sm:top-1/2 -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 px-3 py-1 rounded hover:bg-opacity-80">Next</button>
         </div>
     </div>
 </div>
