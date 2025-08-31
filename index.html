@@ -530,9 +530,9 @@
             
 
           
-            <button @click="prev()" class="left-0 mt-10 sm:mt-0 absolute sm:left-2 sm:top-1/2 -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 px-3 py-1 rounded hover:bg-opacity-80">Prev</button>
+            <button @click="prev()" class="left-0 mt-10 sm:mt-0 absolute cursor-pointer sm:left-2 sm:top-1/2 -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-900 bg-opacity-50 px-3 py-1 rounded hover:bg-opacity-80">Prev</button>
 
-            <button @click="next()" class="right-0 mt-10 sm:mt-0 absolute sm:right-2 sm:top-1/2 -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 px-3 py-1 rounded hover:bg-opacity-80">Next</button>
+            <button @click="next()" class="right-0 mt-10 sm:mt-0 absolute cursor-pointer sm:right-2 sm:top-1/2 -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-900 bg-opacity-50 px-3 py-1 rounded hover:bg-opacity-80">Next</button>
 
             <div class="absolute bottom-[-45px] sm:bottom-[-45px] left-1/2 -translate-x-1/2 flex gap-2">
               <template x-for="(img, i) in gallery" :key="i">
