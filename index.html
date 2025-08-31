@@ -557,12 +557,14 @@
   </p>
   <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5">
     <div class="w-full block flex flex-col gap-5 border border-gray-300 p-4 rounded shadow">
+      <form id="contact-form">
       <h3 class="font-bold text-sm sm:text-base">Send me a message</h3>
-      <input type="text" class="w-full block px-3 py-1 text-xs sm:text-sm rounded border border-gray-300 hover:outline-none hover:ring-2 hover:ring-blue-500" placeholder="Enter your fullname...">
-      <input type="email" class="w-full block px-3 py-1 text-xs sm:text-sm rounded border border-gray-300 hover:outline-none hover:ring-2 hover:ring-blue-500" placeholder="Enter your email...">
-      <input type="text" class="w-full block px-3 py-1 text-xs sm:text-sm rounded border border-gray-300 hover:outline-none hover:ring-2 hover:ring-blue-500" placeholder="Enter your Subject...">
-      <textarea name="" id="" class="w-full block px-3 py-1 text-xs sm:text-sm rounded border border-gray-300 hover:outline-none hover:ring-2 hover:ring-blue-500" rows="10" placeholder="Enter your message..."></textarea>
-      <button class="w-full px-3 py-2 text-xs sm:text-base bg-black text-white flex border border-gray-300 shadow rounded items-center justify-center gap-2 sm:gap-5 cursor-pointer hover:bg-white hover:text-black hover:shadow-lg transition-all"><i data-lucide="send" class="w-5 h-5"></i>Send Message</button>
+      <input type="text" name="name" class="w-full block px-3 py-1 text-xs sm:text-sm rounded border border-gray-300 hover:outline-none hover:ring-2 hover:ring-blue-500" placeholder="Enter your fullname...">
+      <input type="email" name="email" class="w-full block px-3 py-1 text-xs sm:text-sm rounded border border-gray-300 hover:outline-none hover:ring-2 hover:ring-blue-500" placeholder="Enter your email...">
+      <input type="text" name="subject" class="w-full block px-3 py-1 text-xs sm:text-sm rounded border border-gray-300 hover:outline-none hover:ring-2 hover:ring-blue-500" placeholder="Enter your Subject...">
+      <textarea name="user_message" class="w-full block px-3 py-1 text-xs sm:text-sm rounded border border-gray-300 hover:outline-none hover:ring-2 hover:ring-blue-500" rows="10" placeholder="Enter your message..."></textarea>
+      <button type="submit" class="w-full px-3 py-2 text-xs sm:text-base bg-black text-white flex border border-gray-300 shadow rounded items-center justify-center gap-2 sm:gap-5 cursor-pointer hover:bg-white hover:text-black hover:shadow-lg transition-all"><i data-lucide="send" class="w-5 h-5"></i>Send Message</button>
+      </form>
     </div>
 
     <div class="flex flex-col gap-2">
@@ -679,6 +681,26 @@
 
 
 <script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("AbeBvZ2q9V6EHzUAg");
+  })();
+</script>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_vmzmm3a', 'template_1pswtlu', this)
+      .then(() => {
+        alert('Message sent successfully!');
+        this.reset(); // clear form
+      }, (err) => {
+        alert('Failed to send message. ' + JSON.stringify(err));
+      });
+  });
+</script>
 
 <script>
   lucide.createIcons();
