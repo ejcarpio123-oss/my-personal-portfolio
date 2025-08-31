@@ -683,6 +683,7 @@
 
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
   (function(){
     emailjs.init("wCYpEwpw2J-SOCot-");
@@ -695,7 +696,14 @@
 
     emailjs.sendForm('service_q3t0o0e', 'template_kuqj5vn', this)
       .then(() => {
-        alert('Message sent successfully!');
+        Swal.fire({
+            title: "Good job!",
+            text: "Message Successfully Sent!",
+            icon: "success",
+            confirmButtonText: "Okay",
+            timer: 3000,
+            timerProgressBar: true
+          });
         this.reset();
       }, (err) => {
         alert('Failed to send message. ' + JSON.stringify(err));
