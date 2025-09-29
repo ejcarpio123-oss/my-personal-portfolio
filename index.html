@@ -7,11 +7,12 @@
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
 
 <!--Navbar-->
-<!-- navbar -->
 <nav class="hidden md:block bg-white/10 backdrop-blur-lg shadow-md fixed w-full z-[1004]">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
@@ -35,7 +36,7 @@
     </div>
   </div>
 </nav>
-<!-- navbar -->
+
 
 <!-- offcanvas -->
 <div x-data="{ open: false }" x-bind:class="open ? 'overflow-hidden fixed inset-0': ''" class="md:hidden">
@@ -431,51 +432,8 @@
 <div x-show="tab === 'project'" x-data="{
       open: false,
       index: 0,
-      projects: [
+      projects: [ 
         {
-        name: 'Jose\'s Hotel',
-        folder: 'hotel',
-        thumbnail: 'hotel.png',
-        description: 'A web-based system that allows customers to register with OTP verification, book rooms easily, check availability, receive booking confirmation emails, and manage their bookings. Admins can manage rooms, view bookings, and respond to customer messages.',
-        images: ['hotel.png','hotel1.png','hotel2.png', 'hotel3.png', 'hotel4.png', 'hotel5.png'],
-        stack: [
-              { name: 'HTML' },
-              { name: 'CSS' },
-              { name: 'JavaScript' },
-              { name: 'Tailwind' },
-              { name: 'PHP' },
-              { name: 'MySQL' },
-              { name: 'JQuery' },
-              { name: 'Data Tables' },
-              { name: 'SweetAlert2' },
-              { name: 'Alphine' },
-              { name: 'PHP Mailer' }
-           ]
-        }, 
-        {
-        name: 'Jose\'s Resto',
-        folder: 'ecommerce',
-        thumbnail: 'ecommerce.png',
-        description: 'A web-based e-commerce system that lets customers browse products, manage carts and orders, use COD, GCash, or PayMaya for payments, and interact with an AI chat. It features secure email OTP registration, while admins can efficiently manage products, orders, ratings, and analytics.',
-        images: ['ecommerce.png','ecommerce1.png','ecommerce2.png', 'ecommerce3.png', 'ecommerce4.png', 'ecommerce5.png', 'ecommerce6.png', 'ecommerce7.png', 'ecommerce8.png'],
-          stack: [
-              { name: 'HTML' },
-              { name: 'CSS' },
-              { name: 'JavaScript' },
-              { name: 'Tailwind' },
-              { name: 'PHP' },
-              { name: 'MySQL' },
-              { name: 'JQuery' },
-              { name: 'Data Tables' },
-              { name: 'SweetAlert2' },
-              { name: 'Alphine' },
-              { name: 'Bootstrap' },
-              { name: 'GCash' },
-              { name: 'Paymaya' },
-              { name: 'Groq' },
-              { name: 'PHP Mailer' }
-           ]
-        }, {
         name: 'My Personal Portfolio',
         folder: 'portfolio',
         thumbnail: 'portfolio.png',
@@ -618,7 +576,6 @@
 </section>
 <!--Contact Section-->
 
-
 <!--Footer Section-->
 <section class="flex flex-col p-6 flex items-center justify-center max-w-8xl mx-auto text-black gap-5 border border-gray-300">
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 max-w-7xl mx-auto gap-10 w-full">
@@ -681,11 +638,10 @@
 </section>
 <!--Footer Section-->
 
-
-
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
   (function(){
     emailjs.init("wCYpEwpw2J-SOCot-");
@@ -717,7 +673,6 @@
   lucide.createIcons();
 </script>
 
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </body>
 </html>
