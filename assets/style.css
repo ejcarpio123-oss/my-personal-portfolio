@@ -29,3 +29,8 @@ html, body {
 .link:hover::before{
   transform: scaleX(1);
 }
+
+
+[x-cloak] {
+  display: none !important;
+}
