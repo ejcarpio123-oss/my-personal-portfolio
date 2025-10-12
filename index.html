@@ -39,7 +39,7 @@
 
 
 <!-- offcanvas -->
-<div x-data="{ open: false }" x-bind:class="open ? 'overflow-hidden fixed inset-0': ''" class="md:hidden">
+<div x-data="{ open: false }" x-cloak x-init="open = false" x-bind:class="open ? 'overflow-hidden fixed inset-0': ''" class="md:hidden">
 
     <nav class="fixed top-0 left-0 right-0 bg-white/10 backdrop-blur-lg shadow-md px-5 h-16 flex justify-between items-center z-[1000]">
 
@@ -54,6 +54,7 @@
 
     <div
       x-show="open"
+      x-cloak
       x-transition.opacity
       @click="open = false"
       class="fixed inset-0 bg-black/90"
